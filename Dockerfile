@@ -12,7 +12,7 @@
 ###############################################
 FROM python:3-alpine
 
-COPY build/docker-updater/updater.py /usr/local/bin/docker-updater
+COPY updater.py /usr/local/bin/docker-updater
 RUN chmod +x /usr/local/bin/docker-updater
 
 ENTRYPOINT ["docker-updater"]
